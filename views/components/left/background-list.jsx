@@ -11,7 +11,7 @@ class BackgroundList extends React.Component{
     componentDidMount() {
         var context = this;
         setInterval(function() {
-                //context.changeActive();
+                context.changeActive();
             }
             , 3000);
     }
