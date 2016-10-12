@@ -20902,7 +20902,7 @@ var BackgroundList = function (_React$Component) {
         value: function componentDidMount() {
             var context = this;
             setInterval(function () {
-                //context.changeActive();
+                context.changeActive();
             }, 3000);
         }
     }, {

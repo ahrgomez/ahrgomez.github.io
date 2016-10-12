@@ -90,3 +90,16 @@ body {
             font-size: 1em;
             margin-right: 5px;
         }
+
+@media (max-width: 1500px) {
+    .left .backgroundList .background .info {
+        right: 0px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .right {
+        height:auto !important;
+        overflow-y: inherit !important;
+    }
+}
