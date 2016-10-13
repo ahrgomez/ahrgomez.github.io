@@ -21244,16 +21244,43 @@ var Right = function (_React$Component) {
                         }, {
                             title: 'Dependencies injection',
                             badges: ['Unity']
+                        }, {
+                            title: 'Cloud',
+                            badges: ['AWS', 'Heroku']
                         }] })
                 ),
                 _react2.default.createElement(
                     _item2.default,
                     { itemClass: 'jobs', title: 'Where I worked?' },
-                    _react2.default.createElement(_itemJob2.default, { imageName: 'epreselec.jpg',
-                        companyDescription: 'Company dedicated to developing software that manages the curriculums of different companies' }),
+                    _react2.default.createElement(_itemJob2.default, { imageName: 'infojobs.jpg',
+                        companyDescription: 'Company dedicated to developing software that manages the curriculums of different companies, property of Infojobs (Schibsted Spain)',
+                        position: 'Senior Developer',
+                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
+                        skills: ['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5', 'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap', 'AWS', 'TFS', 'Git', 'Jenkins', 'Rhino mocks', 'Unity'] }),
                     _react2.default.createElement('hr', null),
                     _react2.default.createElement(_itemJob2.default, { imageName: 'infoempleo.jpg',
-                        companyDescription: 'Company dedicated to developing software that manages the curriculums of different companies' })
+                        companyDescription: 'Company dedicated to developing software that manages the curriculums of different companies',
+                        position: 'Senior Developer',
+                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
+                        skills: ['.NET', 'Java'] }),
+                    _react2.default.createElement('hr', null),
+                    _react2.default.createElement(_itemJob2.default, { imageName: 'habber.jpg',
+                        companyDescription: 'IT consultancy',
+                        position: 'Senior Developer',
+                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
+                        skills: ['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions'] }),
+                    _react2.default.createElement('hr', null),
+                    _react2.default.createElement(_itemJob2.default, { imageName: 'tfs.png',
+                        companyDescription: 'Company dedicated to developing GIS software',
+                        position: 'Junior / Senior Developer',
+                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
+                        skills: ['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions'] }),
+                    _react2.default.createElement('hr', null),
+                    _react2.default.createElement(_itemJob2.default, { imageName: 'nutapps.jpg',
+                        companyDescription: 'Customer\u2019s custom mobile applications development company.',
+                        position: 'Head of Development Area',
+                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
+                        skills: ['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS'] })
                 )
             );
         }
@@ -21264,7 +21291,7 @@ var Right = function (_React$Component) {
 
 exports.default = Right;
 
-},{"./right/item":186,"./right/item-description-badge":180,"./right/item-description-paragraph":181,"./right/item-job":184,"react":171}],180:[function(require,module,exports){
+},{"./right/item":188,"./right/item-description-badge":180,"./right/item-description-paragraph":181,"./right/item-job":186,"react":171}],180:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21412,6 +21439,124 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var ItemJobDescriptionSkills = function (_React$Component) {
+    _inherits(ItemJobDescriptionSkills, _React$Component);
+
+    function ItemJobDescriptionSkills() {
+        _classCallCheck(this, ItemJobDescriptionSkills);
+
+        return _possibleConstructorReturn(this, (ItemJobDescriptionSkills.__proto__ || Object.getPrototypeOf(ItemJobDescriptionSkills)).apply(this, arguments));
+    }
+
+    _createClass(ItemJobDescriptionSkills, [{
+        key: "render",
+        value: function render() {
+            var count = 0;
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "h6",
+                    null,
+                    "Skills:"
+                ),
+                this.props.skills.map(function (s) {
+                    return _react2.default.createElement(
+                        "span",
+                        { key: count++, className: "badge" },
+                        s
+                    );
+                })
+            );
+        }
+    }]);
+
+    return ItemJobDescriptionSkills;
+}(_react2.default.Component);
+
+exports.default = ItemJobDescriptionSkills;
+
+},{"react":171}],183:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _itemJobDescriptionSkills = require('./item-job-description-skills');
+
+var _itemJobDescriptionSkills2 = _interopRequireDefault(_itemJobDescriptionSkills);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ItemJobDescription = function (_React$Component) {
+    _inherits(ItemJobDescription, _React$Component);
+
+    function ItemJobDescription() {
+        _classCallCheck(this, ItemJobDescription);
+
+        return _possibleConstructorReturn(this, (ItemJobDescription.__proto__ || Object.getPrototypeOf(ItemJobDescription)).apply(this, arguments));
+    }
+
+    _createClass(ItemJobDescription, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'jobDescription' },
+                _react2.default.createElement(
+                    'h4',
+                    null,
+                    this.props.position
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    this.props.jobDescription
+                ),
+                _react2.default.createElement(_itemJobDescriptionSkills2.default, { skills: this.props.skills })
+            );
+        }
+    }]);
+
+    return ItemJobDescription;
+}(_react2.default.Component);
+
+exports.default = ItemJobDescription;
+
+},{"./item-job-description-skills":182,"react":171}],184:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var ItemJobPictureDescription = function (_React$Component) {
     _inherits(ItemJobPictureDescription, _React$Component);
 
@@ -21441,7 +21586,7 @@ var ItemJobPictureDescription = function (_React$Component) {
 
 exports.default = ItemJobPictureDescription;
 
-},{"react":171}],183:[function(require,module,exports){
+},{"react":171}],185:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21493,7 +21638,7 @@ var ItemJobPicture = function (_React$Component) {
 
 exports.default = ItemJobPicture;
 
-},{"./item-job-picture-description":182,"react":171}],184:[function(require,module,exports){
+},{"./item-job-picture-description":184,"react":171}],186:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21509,6 +21654,10 @@ var _react2 = _interopRequireDefault(_react);
 var _itemJobPicture = require('./item-job-picture');
 
 var _itemJobPicture2 = _interopRequireDefault(_itemJobPicture);
+
+var _itemJobDescription = require('./item-job-description');
+
+var _itemJobDescription2 = _interopRequireDefault(_itemJobDescription);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21535,11 +21684,15 @@ var ItemJob = function (_React$Component) {
                 { className: 'row job' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'col-md-4 jobLeft' },
+                    { className: 'col-lg-4 jobLeft' },
                     _react2.default.createElement(_itemJobPicture2.default, { imageName: this.props.imageName,
                         companyDescription: this.props.companyDescription })
                 ),
-                _react2.default.createElement('div', { className: 'col-md-8 jobRight' })
+                _react2.default.createElement(
+                    'div',
+                    { className: 'col-lg-8 jobRight' },
+                    _react2.default.createElement(_itemJobDescription2.default, { position: this.props.position, jobDescription: this.props.jobDescription, skills: this.props.skills })
+                )
             );
         }
     }]);
@@ -21549,7 +21702,7 @@ var ItemJob = function (_React$Component) {
 
 exports.default = ItemJob;
 
-},{"./item-job-picture":183,"react":171}],185:[function(require,module,exports){
+},{"./item-job-description":183,"./item-job-picture":185,"react":171}],187:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21595,7 +21748,7 @@ var ItemTitle = function (_React$Component) {
 
 exports.default = ItemTitle;
 
-},{"react":171}],186:[function(require,module,exports){
+},{"react":171}],188:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21651,4 +21804,4 @@ var Item = function (_React$Component) {
 
 exports.default = Item;
 
-},{"./item-title":185,"react":171}]},{},[172]);
+},{"./item-title":187,"react":171}]},{},[172]);

@@ -69,12 +69,6 @@ body {
         box-shadow: 3px -2px 31px -3px rgba(21,5,5,0.42);
     }
 
-    .right div.item:first-child:hover {
-        -webkit-box-shadow: 0px 0px 124px -3px rgba(15,4,0,0.42);
-        -moz-box-shadow: 0px 0px 124px -3px rgba(15,4,0,0.42);
-        box-shadow: 0px 0px 124px -3px rgba(15,4,0,0.42);
-    }
-
     .right .item h3 {
         text-align: center;
         font-weight: bolder;
@@ -104,7 +98,6 @@ body {
 
             .right .job  .jobLeft {
                 position: relative;
-                display: inline-block;
             }
 
                 .right .job .jobLeft .jobPicture
@@ -125,15 +118,28 @@ body {
                     font-size: 17px;
                     line-height: 18px;
                     text-align: right;
+                    padding-right: 20px;
                 }
 
-@media (max-width: 1500px) {
+            .right .jobRight .jobDescription h4 {
+                font-size: 2em;
+            }
+
+                .right .jobRight .jobDescription div h6 {
+                    font-size: 1.4em;
+                }
+
+                .right .jobRight .jobDescription div span.badge {
+                    margin: 3px;
+                }
+
+@media (max-width: 900px) {
     .left .backgroundList .background .info {
         right: 0px !important;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .right {
         height:auto !important;
         overflow-y: inherit !important;

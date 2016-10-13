@@ -78,17 +78,49 @@ class Right extends React.Component {
                                 title: 'Dependencies injection',
                                 badges: [
                                     'Unity']
+                            },
+                            {
+                                title: 'Cloud',
+                                badges: [
+                                    'AWS', 'Heroku']
                             }
                             ]} />
                     </Item>
                     <Item itemClass="jobs" title="Where I worked?">
-                        <ItemJob imageName="epreselec.jpg"
+                        <ItemJob imageName="infojobs.jpg"
                                  companyDescription="Company dedicated to developing
-                                 software that manages the curriculums of different companies" />
+                                 software that manages the curriculums of different companies,
+                                 property of Infojobs (Schibsted Spain)"
+                                 position="Senior Developer"
+                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
+                                 skills={['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5', 'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap', 'AWS', 'TFS', 'Git', 'Jenkins', 'Rhino mocks', 'Unity']} />
+
                         <hr />
                         <ItemJob imageName="infoempleo.jpg"
                                  companyDescription="Company dedicated to developing
-                                 software that manages the curriculums of different companies" />
+                                 software that manages the curriculums of different companies"
+                                 position="Senior Developer"
+                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
+                                 skills={['.NET', 'Java']}/>
+                        <hr />
+                        <ItemJob imageName="habber.jpg"
+                                 companyDescription="IT consultancy"
+                                 position="Senior Developer"
+                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
+                                 skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions']}/>
+                        <hr />
+                        <ItemJob imageName="tfs.png"
+                                 companyDescription="Company dedicated to developing
+                                 GIS software"
+                                 position="Junior / Senior Developer"
+                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
+                                 skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions']}/>
+                        <hr />
+                        <ItemJob imageName="nutapps.jpg"
+                                 companyDescription="Customer’s custom mobile applications development company."
+                                 position="Head of Development Area"
+                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
+                                 skills={['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS']}/>
                     </Item>
                 </div>
     }

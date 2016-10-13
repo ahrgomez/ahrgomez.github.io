@@ -5,7 +5,8 @@ class ItemJobPicture extends React.Component{
 
     render() {
         var imageSource = "/images/" + this.props.imageName;
-        return  <div><img className="jobPicture" src={imageSource} />
+        return  <div>
+                    <img className="jobPicture" src={imageSource} />
                     <ItemJobDescription description={this.props.companyDescription} />
                 </div>
     }
