@@ -64,6 +64,12 @@ body {
         margin: 10px auto;
         background-color: #fff;
 
+        -webkit-box-shadow: 3px -2px 31px -3px rgba(21,5,5,0.42);
+        -moz-box-shadow: 3px -2px 31px -3px rgba(21,5,5,0.42);
+        box-shadow: 3px -2px 31px -3px rgba(21,5,5,0.42);
+    }
+
+    .right div.item:first-child:hover {
         -webkit-box-shadow: 0px 0px 124px -3px rgba(15,4,0,0.42);
         -moz-box-shadow: 0px 0px 124px -3px rgba(15,4,0,0.42);
         box-shadow: 0px 0px 124px -3px rgba(15,4,0,0.42);
@@ -90,6 +96,36 @@ body {
             font-size: 1em;
             margin-right: 5px;
         }
+
+        .right .job
+        {
+            margin: 15px;
+        }
+
+            .right .job  .jobLeft {
+                position: relative;
+                display: inline-block;
+            }
+
+                .right .job .jobLeft .jobPicture
+                {
+                    width: 100%;
+                }
+
+                .right .job .jobLeft .jobPictureDescription
+                {
+                    position: absolute;
+                    right: 5px;
+                    bottom: 5px;
+                    left: 42px;
+                    background-color: #1c1c1c;
+                    opacity: 0.7;
+                    color: white;
+                    padding: 4px;
+                    font-size: 17px;
+                    line-height: 18px;
+                    text-align: right;
+                }
 
 @media (max-width: 1500px) {
     .left .backgroundList .background .info {

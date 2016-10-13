@@ -21176,13 +21176,21 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _professionalDescription = require('./right/professional-description');
+var _item = require('./right/item');
 
-var _professionalDescription2 = _interopRequireDefault(_professionalDescription);
+var _item2 = _interopRequireDefault(_item);
 
-var _professionalSkills = require('./right/professional-skills');
+var _itemDescriptionParagraph = require('./right/item-description-paragraph');
 
-var _professionalSkills2 = _interopRequireDefault(_professionalSkills);
+var _itemDescriptionParagraph2 = _interopRequireDefault(_itemDescriptionParagraph);
+
+var _itemDescriptionBadge = require('./right/item-description-badge');
+
+var _itemDescriptionBadge2 = _interopRequireDefault(_itemDescriptionBadge);
+
+var _itemJob = require('./right/item-job');
+
+var _itemJob2 = _interopRequireDefault(_itemJob);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21207,8 +21215,46 @@ var Right = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'right col-md-8' },
-                _react2.default.createElement(_professionalDescription2.default, null),
-                _react2.default.createElement(_professionalSkills2.default, null)
+                _react2.default.createElement(
+                    _item2.default,
+                    { itemClass: 'professional-description', title: 'Who am I?' },
+                    _react2.default.createElement(_itemDescriptionParagraph2.default, { descriptions: ["An experienced professional with more than 8 years experience in the IT sector.", "An experienced professional with more than 10 years experience in " + "the software development sector, with the last 6 years specializing " + "in .NET applications development.", "During this time I have covered a wide range of functions and responsibilities " + "in the management of Projects and Teams.", "I am accustomed to a handling a demanding work-load while working under pressure. " + "I can manage effectively by establishing clear objectives and being results-oriented. " + "I am looking for a project in which I can contribute to the organization by expanding " + "the business development area while enhancing my personal growth."] })
+                ),
+                _react2.default.createElement(
+                    _item2.default,
+                    { itemClass: 'professional-skills', title: 'What I know about software development?' },
+                    _react2.default.createElement(_itemDescriptionBadge2.default, { items: [{
+                            title: 'Front-end',
+                            badges: ['HTML 5', 'CSS 3', 'Pure JavaScript', 'jQuery', 'React.js', 'Backbone.js', 'Knockout.js', 'Require.js', 'Bootstrap']
+                        }, {
+                            title: 'Back-end',
+                            badges: ['Classic ASP', 'ASP.Net', 'ASP.Net MVC', 'WCF', 'Node.js', 'Ruby', 'Objective C']
+                        }, {
+                            title: 'Databases',
+                            badges: ['SQL Server 2008+', 'Entity Framework', 'LINQ', 'Lambda expressions', 'Mongo DB', 'SQL lite']
+                        }, {
+                            title: 'Versioning control',
+                            badges: ['Team Foundation Server (TFS)', 'Git', 'SVN']
+                        }, {
+                            title: 'Continuous integration',
+                            badges: ['Jenkins']
+                        }, {
+                            title: 'Unit testing',
+                            badges: ['Rhino mocks']
+                        }, {
+                            title: 'Dependencies injection',
+                            badges: ['Unity']
+                        }] })
+                ),
+                _react2.default.createElement(
+                    _item2.default,
+                    { itemClass: 'jobs', title: 'Where I worked?' },
+                    _react2.default.createElement(_itemJob2.default, { imageName: 'epreselec.jpg',
+                        companyDescription: 'Company dedicated to developing software that manages the curriculums of different companies' }),
+                    _react2.default.createElement('hr', null),
+                    _react2.default.createElement(_itemJob2.default, { imageName: 'infoempleo.jpg',
+                        companyDescription: 'Company dedicated to developing software that manages the curriculums of different companies' })
+                )
             );
         }
     }]);
@@ -21218,7 +21264,7 @@ var Right = function (_React$Component) {
 
 exports.default = Right;
 
-},{"./right/professional-description":180,"./right/professional-skills":181,"react":171}],180:[function(require,module,exports){
+},{"./right/item":186,"./right/item-description-badge":180,"./right/item-description-paragraph":181,"./right/item-job":184,"react":171}],180:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21239,56 +21285,113 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ProfessionalDescription = function (_React$Component) {
-    _inherits(ProfessionalDescription, _React$Component);
+var ItemDescriptionBadge = function (_React$Component) {
+    _inherits(ItemDescriptionBadge, _React$Component);
 
-    function ProfessionalDescription() {
-        _classCallCheck(this, ProfessionalDescription);
+    function ItemDescriptionBadge() {
+        _classCallCheck(this, ItemDescriptionBadge);
 
-        return _possibleConstructorReturn(this, (ProfessionalDescription.__proto__ || Object.getPrototypeOf(ProfessionalDescription)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (ItemDescriptionBadge.__proto__ || Object.getPrototypeOf(ItemDescriptionBadge)).apply(this, arguments));
     }
 
-    _createClass(ProfessionalDescription, [{
+    _createClass(ItemDescriptionBadge, [{
         key: "render",
         value: function render() {
+            var returnItems = [];
+            for (var i = 0; i < this.props.items.length; i++) {
+                var item = this.props.items[i];
+                var returnItem = [];
+                var titleKey = "title_" + i;
+                returnItem.push(_react2.default.createElement(
+                    "h4",
+                    { key: titleKey },
+                    item.title
+                ));
+
+                for (var j = 0; j < item.badges.length; j++) {
+                    var badgeKey = "badge_" + i + "_" + j;
+                    returnItem.push(_react2.default.createElement(
+                        "span",
+                        { className: "badge", key: badgeKey },
+                        item.badges[j]
+                    ));
+                }
+
+                var sectionKey = "badgesSection_" + i;
+                returnItems.push(_react2.default.createElement(
+                    "div",
+                    { key: sectionKey },
+                    returnItem
+                ));
+            }
+
             return _react2.default.createElement(
                 "div",
-                { className: "professional-description item" },
-                _react2.default.createElement(
-                    "h3",
-                    null,
-                    "Who am I?"
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "An experienced professional with more than 8 years experience in the IT sector."
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "An experienced professional with more than 10 years experience in the software development sector, with the last 6 years specializing in .NET applications development."
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "During this time I have covered a wide range of functions and responsibilities in the management of Projects and Teams."
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "I am accustomed to a handling a demanding work-load while working under pressure. I can manage effectively by establishing clear objectives and being results-oriented. I am looking for a project in which I can contribute to the organization by expanding the business development area while enhancing my personal growth."
-                )
+                null,
+                returnItems
             );
         }
     }]);
 
-    return ProfessionalDescription;
+    return ItemDescriptionBadge;
 }(_react2.default.Component);
 
-exports.default = ProfessionalDescription;
+exports.default = ItemDescriptionBadge;
 
 },{"react":171}],181:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ItemDescriptionParagraph = function (_React$Component) {
+    _inherits(ItemDescriptionParagraph, _React$Component);
+
+    function ItemDescriptionParagraph() {
+        _classCallCheck(this, ItemDescriptionParagraph);
+
+        return _possibleConstructorReturn(this, (ItemDescriptionParagraph.__proto__ || Object.getPrototypeOf(ItemDescriptionParagraph)).apply(this, arguments));
+    }
+
+    _createClass(ItemDescriptionParagraph, [{
+        key: 'render',
+        value: function render() {
+            var count = 0;
+            return _react2.default.createElement(
+                'div',
+                null,
+                Array.from(this.props.descriptions, function (d) {
+                    return _react2.default.createElement(
+                        'p',
+                        { key: count++ },
+                        d
+                    );
+                })
+            );
+        }
+    }]);
+
+    return ItemDescriptionParagraph;
+}(_react2.default.Component);
+
+exports.default = ItemDescriptionParagraph;
+
+},{"react":171}],182:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21309,203 +21412,243 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ProfessionalSkills = function (_React$Component) {
-    _inherits(ProfessionalSkills, _React$Component);
+var ItemJobPictureDescription = function (_React$Component) {
+    _inherits(ItemJobPictureDescription, _React$Component);
 
-    function ProfessionalSkills() {
-        _classCallCheck(this, ProfessionalSkills);
+    function ItemJobPictureDescription() {
+        _classCallCheck(this, ItemJobPictureDescription);
 
-        return _possibleConstructorReturn(this, (ProfessionalSkills.__proto__ || Object.getPrototypeOf(ProfessionalSkills)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (ItemJobPictureDescription.__proto__ || Object.getPrototypeOf(ItemJobPictureDescription)).apply(this, arguments));
     }
 
-    _createClass(ProfessionalSkills, [{
+    _createClass(ItemJobPictureDescription, [{
         key: "render",
         value: function render() {
             return _react2.default.createElement(
                 "div",
-                { className: "professional-skills item" },
+                { className: "jobPictureDescription" },
                 _react2.default.createElement(
-                    "h3",
+                    "span",
                     null,
-                    "What I know about software development?"
-                ),
-                _react2.default.createElement(
-                    "h4",
-                    null,
-                    "Front-end"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "HTML 5"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "CSS 3"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Pure JavaScript"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "jQuery"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "React.js"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Backbone.js"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Knockout.js"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Require.js"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Bootstrap"
-                ),
-                _react2.default.createElement(
-                    "h4",
-                    null,
-                    "Back-end"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Classic ASP"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "ASP.Net"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "ASP.Net MVC"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "WCF"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Node.js"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Ruby"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Objective C"
-                ),
-                _react2.default.createElement(
-                    "h4",
-                    null,
-                    "Databases"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "SQL Server 2008+"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Entity Framework"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Lambda expressions"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Mongo DB"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "SQL lite"
-                ),
-                _react2.default.createElement(
-                    "h4",
-                    null,
-                    "Versioning control"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Team Foundation Server (TFS)"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Git"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "SVN"
-                ),
-                _react2.default.createElement(
-                    "h4",
-                    null,
-                    "Continuous integration"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Jenkins"
-                ),
-                _react2.default.createElement(
-                    "h4",
-                    null,
-                    "Unit testing"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Rhino mocks"
-                ),
-                _react2.default.createElement(
-                    "h4",
-                    null,
-                    "Dependencies injection"
-                ),
-                _react2.default.createElement(
-                    "span",
-                    { className: "badge" },
-                    "Unity"
+                    this.props.description
                 )
             );
         }
     }]);
 
-    return ProfessionalSkills;
+    return ItemJobPictureDescription;
 }(_react2.default.Component);
 
-exports.default = ProfessionalSkills;
+exports.default = ItemJobPictureDescription;
 
-},{"react":171}]},{},[172]);
+},{"react":171}],183:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _itemJobPictureDescription = require('./item-job-picture-description');
+
+var _itemJobPictureDescription2 = _interopRequireDefault(_itemJobPictureDescription);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ItemJobPicture = function (_React$Component) {
+    _inherits(ItemJobPicture, _React$Component);
+
+    function ItemJobPicture() {
+        _classCallCheck(this, ItemJobPicture);
+
+        return _possibleConstructorReturn(this, (ItemJobPicture.__proto__ || Object.getPrototypeOf(ItemJobPicture)).apply(this, arguments));
+    }
+
+    _createClass(ItemJobPicture, [{
+        key: 'render',
+        value: function render() {
+            var imageSource = "/images/" + this.props.imageName;
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement('img', { className: 'jobPicture', src: imageSource }),
+                _react2.default.createElement(_itemJobPictureDescription2.default, { description: this.props.companyDescription })
+            );
+        }
+    }]);
+
+    return ItemJobPicture;
+}(_react2.default.Component);
+
+exports.default = ItemJobPicture;
+
+},{"./item-job-picture-description":182,"react":171}],184:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _itemJobPicture = require('./item-job-picture');
+
+var _itemJobPicture2 = _interopRequireDefault(_itemJobPicture);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ItemJob = function (_React$Component) {
+    _inherits(ItemJob, _React$Component);
+
+    function ItemJob() {
+        _classCallCheck(this, ItemJob);
+
+        return _possibleConstructorReturn(this, (ItemJob.__proto__ || Object.getPrototypeOf(ItemJob)).apply(this, arguments));
+    }
+
+    _createClass(ItemJob, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'row job' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'col-md-4 jobLeft' },
+                    _react2.default.createElement(_itemJobPicture2.default, { imageName: this.props.imageName,
+                        companyDescription: this.props.companyDescription })
+                ),
+                _react2.default.createElement('div', { className: 'col-md-8 jobRight' })
+            );
+        }
+    }]);
+
+    return ItemJob;
+}(_react2.default.Component);
+
+exports.default = ItemJob;
+
+},{"./item-job-picture":183,"react":171}],185:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ItemTitle = function (_React$Component) {
+    _inherits(ItemTitle, _React$Component);
+
+    function ItemTitle() {
+        _classCallCheck(this, ItemTitle);
+
+        return _possibleConstructorReturn(this, (ItemTitle.__proto__ || Object.getPrototypeOf(ItemTitle)).apply(this, arguments));
+    }
+
+    _createClass(ItemTitle, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'h3',
+                null,
+                this.props.title
+            );
+        }
+    }]);
+
+    return ItemTitle;
+}(_react2.default.Component);
+
+exports.default = ItemTitle;
+
+},{"react":171}],186:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _itemTitle = require('./item-title');
+
+var _itemTitle2 = _interopRequireDefault(_itemTitle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Item = function (_React$Component) {
+    _inherits(Item, _React$Component);
+
+    function Item() {
+        _classCallCheck(this, Item);
+
+        return _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).apply(this, arguments));
+    }
+
+    _createClass(Item, [{
+        key: 'render',
+        value: function render() {
+            var itemClass = "item";
+            if (this.props.itemClass != undefined) {
+                itemClass += " " + this.props.itemClass;
+            }
+
+            return _react2.default.createElement(
+                'div',
+                { className: itemClass },
+                _react2.default.createElement(_itemTitle2.default, { title: this.props.title }),
+                this.props.children
+            );
+        }
+    }]);
+
+    return Item;
+}(_react2.default.Component);
+
+exports.default = Item;
+
+},{"./item-title":185,"react":171}]},{},[172]);
