@@ -34,7 +34,7 @@ class Background extends React.Component{
 
     render() {
         var backgroundStyles = {
-            backgroundImage: 'url(/images/' + this.state.imageName + ')',
+            backgroundImage: 'url(images/' + this.state.imageName + ')',
             display: this.props.active == parseInt(this.props.Id) ? "block" : "none"
         }
         return <div className="background" style={backgroundStyles} onClick={this.props.onClick}>
