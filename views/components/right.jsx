@@ -88,11 +88,14 @@ class Right extends React.Component {
                     </Item>
                     <Item itemClass="jobs" title="Where I worked?">
                         <ItemJob imageName="infojobs.jpg"
-                                 companyDescription="Job at ePreselec area dedicated to develope
+                                 companyDescription="Job at ePreselec area, dedicated to develope
                                  software that manages the curriculums of different companies,
                                  property of Infojobs (Schibsted Spain)"
                                  position="Senior Developer"
-                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
+                                 jobDescription="6 person Scrum team member, dedicated to mantain Classic ASP and
+                                 ASP.Net windows and web applications and and the new software development in any
+                                 technologies like ASP.Net MVC, Java, PHP, Node.JS deployed on cloud
+                                 using AWS architecture."
                                  skills={['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008',
                                      'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5',
                                      'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap',
@@ -100,8 +103,8 @@ class Right extends React.Component {
 
                         <hr />
                         <ItemJob imageName="infoempleo.jpg"
-                                 companyDescription="Company dedicated to developing
-                                 software that manages the curriculums of different companies"
+                                 companyDescription="Company dedicated to software development that
+                                 manages the curriculums of different companies"
                                  position="Senior Developer"
                                  jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
                                  skills={['.NET', 'Java']}/>
@@ -113,19 +116,19 @@ class Right extends React.Component {
                                  skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework',
                                      'Lambda Expressions']}/>
                         <hr />
-                        <ItemJob imageName="tfs.png"
+                        <ItemJob imageName="nutapps.jpg"
+                                 companyDescription="Customer’s custom mobile applications development company."
+                                 position="Head of Development Area"
+                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
+                                 skills={['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS']}/>
+                        <hr />
+                        <ItemJob imageName="tfs.jpg"
                                  companyDescription="Company dedicated to developing
                                  GIS software"
                                  position="Junior / Senior Developer"
                                  jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
                                  skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework',
                                      'Lambda Expressions']}/>
-                        <hr />
-                        <ItemJob imageName="nutapps.jpg"
-                                 companyDescription="Customer’s custom mobile applications development company."
-                                 position="Head of Development Area"
-                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
-                                 skills={['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS']}/>
                     </Item>
                 </div>
     }
