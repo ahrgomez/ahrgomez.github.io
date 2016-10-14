@@ -92,8 +92,8 @@ class Right extends React.Component {
                                  software that manages the curriculums of different companies,
                                  property of Infojobs (Schibsted Spain)"
                                  position="Senior Developer"
-                                 jobDescription="6 person Scrum team member, dedicated to mantain Classic ASP and
-                                 ASP.Net windows and web applications and and the new software development in any
+                                 jobDescription="6 person Scrum team member, dedicated to mantain VisualBasic console applications,
+                                 Classic ASP, ASP.Net MVC, ASP.Net web applications and and the new software development in any
                                  technologies like ASP.Net MVC, Java, PHP, Node.JS deployed on cloud
                                  using AWS architecture."
                                  skills={['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008',
