@@ -21253,7 +21253,7 @@ var Right = function (_React$Component) {
                     _item2.default,
                     { itemClass: 'jobs', title: 'Where I worked?' },
                     _react2.default.createElement(_itemJob2.default, { imageName: 'infojobs.jpg',
-                        companyDescription: 'Company dedicated to developing software that manages the curriculums of different companies, property of Infojobs (Schibsted Spain)',
+                        companyDescription: 'Job at ePreselec area dedicated to develope software that manages the curriculums of different companies, property of Infojobs (Schibsted Spain)',
                         position: 'Senior Developer',
                         jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
                         skills: ['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5', 'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap', 'AWS', 'TFS', 'Git', 'Jenkins', 'Rhino mocks', 'Unity'] }),

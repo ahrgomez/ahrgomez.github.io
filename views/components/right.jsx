@@ -88,12 +88,15 @@ class Right extends React.Component {
                     </Item>
                     <Item itemClass="jobs" title="Where I worked?">
                         <ItemJob imageName="infojobs.jpg"
-                                 companyDescription="Company dedicated to developing
+                                 companyDescription="Job at ePreselec area dedicated to develope
                                  software that manages the curriculums of different companies,
                                  property of Infojobs (Schibsted Spain)"
                                  position="Senior Developer"
                                  jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
-                                 skills={['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5', 'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap', 'AWS', 'TFS', 'Git', 'Jenkins', 'Rhino mocks', 'Unity']} />
+                                 skills={['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008',
+                                     'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5',
+                                     'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap',
+                                     'AWS', 'TFS', 'Git', 'Jenkins', 'Rhino mocks', 'Unity']} />
 
                         <hr />
                         <ItemJob imageName="infoempleo.jpg"
@@ -107,14 +110,16 @@ class Right extends React.Component {
                                  companyDescription="IT consultancy"
                                  position="Senior Developer"
                                  jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
-                                 skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions']}/>
+                                 skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework',
+                                     'Lambda Expressions']}/>
                         <hr />
                         <ItemJob imageName="tfs.png"
                                  companyDescription="Company dedicated to developing
                                  GIS software"
                                  position="Junior / Senior Developer"
                                  jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
-                                 skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions']}/>
+                                 skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework',
+                                     'Lambda Expressions']}/>
                         <hr />
                         <ItemJob imageName="nutapps.jpg"
                                  companyDescription="Customer’s custom mobile applications development company."
