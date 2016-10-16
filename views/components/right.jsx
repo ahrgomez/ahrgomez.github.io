@@ -9,7 +9,6 @@ class Right extends React.Component {
         return  <div className="right col-md-8">
                     <Item itemClass="professional-description" title="Who am I?">
                         <ItemDescriptionParagraph descriptions={[
-                            "An experienced professional with more than 8 years experience in the IT sector.",
                             "An experienced professional with more than 10 years experience in " +
                             "the software development sector, with the last 6 years specializing " +
                             "in .NET applications development.",
@@ -17,8 +16,8 @@ class Right extends React.Component {
                             "in the management of Projects and Teams.",
                             "I am accustomed to a handling a demanding work-load while working under pressure. " +
                             "I can manage effectively by establishing clear objectives and being results-oriented. " +
-                            "I am looking for a project in which I can contribute to the organization by expanding " +
-                            "the business development area while enhancing my personal growth."
+                            "I am looking for a project in which I can contribute to the organization with my software " +
+                            "development experience improving the quality of the company applications enhancing my personal growth."
                         ]} />
                     </Item>
                     <Item itemClass="professional-skills" title="What I know about software development?">
@@ -46,6 +45,13 @@ class Right extends React.Component {
                                     'Node.js',
                                     'Ruby',
                                     'Objective C']
+                            },
+                            {
+                                title: 'Desktop',
+                                badges: [
+                                    'Windows Forms',
+                                    'WPF'
+                                ]
                             },
                             {
                                 title: 'Databases',
@@ -92,43 +98,52 @@ class Right extends React.Component {
                                  software that manages the curriculums of different companies,
                                  property of Infojobs (Schibsted Spain)"
                                  position="Senior Developer"
-                                 jobDescription="6 person Scrum team member, dedicated to mantain VisualBasic console applications,
-                                 Classic ASP, ASP.Net MVC, ASP.Net web applications and and the new software development in any
+                                 jobDescription="6 person Scrum team member, dedicated to maintain VisualBasic console applications,
+                                 Classic ASP, ASP.Net MVC, ASP.Net web applications and to the new software development in some
                                  technologies like ASP.Net MVC, Java, PHP, Node.JS deployed on cloud
                                  using AWS architecture."
-                                 skills={['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008',
+                                 skills={['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Mongo DB',
                                      'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5',
                                      'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap',
                                      'AWS', 'TFS', 'Git', 'Jenkins', 'Rhino mocks', 'Unity']} />
 
                         <hr />
                         <ItemJob imageName="infoempleo.jpg"
-                                 companyDescription="Company dedicated to software development that
-                                 manages the curriculums of different companies"
+                                 companyDescription="Job at ePreselec area, dedicated to
+                                 software development that manages the curriculums of different companies,
+                                 property of Infoempleo"
                                  position="Senior Developer"
-                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
-                                 skills={['.NET', 'Java']}/>
+                                 jobDescription="Member of a team dedicated to maintain Classic ASP applications
+                                 and to the new software development using ASP.Net."
+                                 skills={['Classic ASP', 'ASP.NET', 'SQL Server 2008', 'Entity Framework',
+                                     'Lambda Expressions', 'Pure Javascript', 'jQuery', 'TFS']}/>
                         <hr />
                         <ItemJob imageName="habber.jpg"
-                                 companyDescription="IT consultancy"
+                                 companyDescription="IT consultancy, job in internal projects and at ePreselec (Infoempleo.com)"
                                  position="Senior Developer"
-                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
+                                 jobDescription="Dedicated to the development of the SWI Crawler UI using Pure
+                                 Javascript, jQuery and Backbone.js"
                                  skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework',
-                                     'Lambda Expressions']}/>
+                                     'Lambda Expressions', 'HTML 5',
+                                     'CSS 3', 'Pure Javascript', 'jQuery', 'Backbone.JS', 'Bootstrap', 'SVN']}/>
                         <hr />
                         <ItemJob imageName="nutapps.jpg"
                                  companyDescription="Customer’s custom mobile applications development company."
-                                 position="Head of Development Area"
-                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
-                                 skills={['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS']}/>
+                                 position="Co-Founder, Head of Development Area"
+                                 jobDescription="Review of availability customers requests, creating MVP of
+                                 the projects to can give to client using Objective C,
+                                 Java Android and other backend technologies."
+                                 skills={['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS', 'Mongo DB']}/>
                         <hr />
                         <ItemJob imageName="tfs.jpg"
                                  companyDescription="Company dedicated to developing
                                  GIS software"
                                  position="Junior / Senior Developer"
-                                 jobDescription="jofnwj fewj fejo fjoew foewj ewojf ew"
-                                 skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework',
-                                     'Lambda Expressions']}/>
+                                 jobDescription="Many GIS applications development like Cloud-Mapping, unoGIS,
+                                 Inkolan or unoBRA based on .Net technologies like ASP.Net, WPF, WCF, MVC..."
+                                 skills={['ASP.NET', 'ASP.Net MVC', 'Windows Forms', 'WPF', 'WCF', 'SQL Server 2008', 'Entity Framework',
+                                     'Lambda Expressions', 'TFS', 'HTML 5', 'CSS 3', 'Pure JavaScript',
+                                     'jQuery', 'Backbone.js']}/>
                     </Item>
                 </div>
     }

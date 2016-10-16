@@ -60,6 +60,29 @@ hr
                     text-align: center;
                 }
 
+            .left .backgroundList .background .contact {
+                text-align: center;
+            }
+
+                .left .backgroundList .background .contact a {
+                    font-size: 46px;
+                    margin: 15px;
+                    color: #fff;
+                }
+
+                .left .backgroundList .background .contact a.git:hover {
+                    color: #000;
+                }
+
+                .left .backgroundList .background .contact a.linkedin:hover {
+                    color: #1A85BC;
+                }
+
+
+                .left .backgroundList .background .contact a.mail:hover {
+                    color: red;
+                }
+
 .right {
     background-color: #f8f8f8;
     overflow-y: auto;

@@ -20810,7 +20810,7 @@ var App = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("container"));
 
-},{"./components/left":173,"./components/right":179,"react":171,"react-dom":2}],173:[function(require,module,exports){
+},{"./components/left":173,"./components/right":180,"react":171,"react-dom":2}],173:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20960,6 +20960,10 @@ var _description = require('./description');
 
 var _description2 = _interopRequireDefault(_description);
 
+var _contact = require('./contact');
+
+var _contact2 = _interopRequireDefault(_contact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21018,7 +21022,8 @@ var Background = function (_React$Component) {
                     _react2.default.createElement(_pic2.default, null),
                     _react2.default.createElement(_name2.default, { name: '<Alejandro Hern\xE1ndez />' }),
                     _react2.default.createElement(_description2.default, { description: 'I love turning complex problems into simple,' }),
-                    _react2.default.createElement(_description2.default, { description: 'doing beautiful and useful things that people can enjoy.' })
+                    _react2.default.createElement(_description2.default, { description: 'doing beautiful and useful things that people can enjoy.' }),
+                    _react2.default.createElement(_contact2.default, null)
                 )
             );
         }
@@ -21029,7 +21034,67 @@ var Background = function (_React$Component) {
 
 exports.default = Background;
 
-},{"./description":176,"./name":177,"./pic":178,"react":171}],176:[function(require,module,exports){
+},{"./contact":176,"./description":177,"./name":178,"./pic":179,"react":171}],176:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_React$Component) {
+    _inherits(Contact, _React$Component);
+
+    function Contact() {
+        _classCallCheck(this, Contact);
+
+        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+    }
+
+    _createClass(Contact, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "contact", title: "See ahrgomez's github account" },
+                _react2.default.createElement(
+                    "a",
+                    { className: "git", href: "htts://github.com/ahrgomez" },
+                    _react2.default.createElement("i", { className: "fa fa-github" })
+                ),
+                _react2.default.createElement(
+                    "a",
+                    { className: "linkedin", href: "https://es.linkedin.com/in/alejandro-hern\xE1ndez-a056233b", title: "See ahrgomez's linkedin CV" },
+                    _react2.default.createElement("i", { className: "fa fa-linkedin" })
+                ),
+                _react2.default.createElement(
+                    "a",
+                    { className: "mail", href: "mailto:contact@ahrgomez.com", title: "Send an email to ahrgomez" },
+                    _react2.default.createElement("i", { className: "fa fa-envelope" })
+                )
+            );
+        }
+    }]);
+
+    return Contact;
+}(_react2.default.Component);
+
+exports.default = Contact;
+
+},{"react":171}],177:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21075,7 +21140,7 @@ var Description = function (_React$Component) {
 
 exports.default = Description;
 
-},{"react":171}],177:[function(require,module,exports){
+},{"react":171}],178:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21121,7 +21186,7 @@ var Name = function (_React$Component) {
 
 exports.default = Name;
 
-},{"react":171}],178:[function(require,module,exports){
+},{"react":171}],179:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21163,7 +21228,7 @@ var Pic = function (_React$Component) {
 
 exports.default = Pic;
 
-},{"react":171}],179:[function(require,module,exports){
+},{"react":171}],180:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21218,7 +21283,7 @@ var Right = function (_React$Component) {
                 _react2.default.createElement(
                     _item2.default,
                     { itemClass: 'professional-description', title: 'Who am I?' },
-                    _react2.default.createElement(_itemDescriptionParagraph2.default, { descriptions: ["An experienced professional with more than 8 years experience in the IT sector.", "An experienced professional with more than 10 years experience in " + "the software development sector, with the last 6 years specializing " + "in .NET applications development.", "During this time I have covered a wide range of functions and responsibilities " + "in the management of Projects and Teams.", "I am accustomed to a handling a demanding work-load while working under pressure. " + "I can manage effectively by establishing clear objectives and being results-oriented. " + "I am looking for a project in which I can contribute to the organization by expanding " + "the business development area while enhancing my personal growth."] })
+                    _react2.default.createElement(_itemDescriptionParagraph2.default, { descriptions: ["An experienced professional with more than 10 years experience in " + "the software development sector, with the last 6 years specializing " + "in .NET applications development.", "During this time I have covered a wide range of functions and responsibilities " + "in the management of Projects and Teams.", "I am accustomed to a handling a demanding work-load while working under pressure. " + "I can manage effectively by establishing clear objectives and being results-oriented. " + "I am looking for a project in which I can contribute to the organization with my software " + "development experience improving the quality of the company applications enhancing my personal growth."] })
                 ),
                 _react2.default.createElement(
                     _item2.default,
@@ -21229,6 +21294,9 @@ var Right = function (_React$Component) {
                         }, {
                             title: 'Back-end',
                             badges: ['Classic ASP', 'ASP.Net', 'ASP.Net MVC', 'WCF', 'Node.js', 'Ruby', 'Objective C']
+                        }, {
+                            title: 'Desktop',
+                            badges: ['Windows Forms', 'WPF']
                         }, {
                             title: 'Databases',
                             badges: ['SQL Server 2008+', 'Entity Framework', 'LINQ', 'Lambda expressions', 'Mongo DB', 'SQL lite']
@@ -21255,32 +21323,32 @@ var Right = function (_React$Component) {
                     _react2.default.createElement(_itemJob2.default, { imageName: 'infojobs.jpg',
                         companyDescription: 'Job at ePreselec area, dedicated to develope software that manages the curriculums of different companies, property of Infojobs (Schibsted Spain)',
                         position: 'Senior Developer',
-                        jobDescription: '6 person Scrum team member, dedicated to mantain Classic ASP and ASP.Net windows and web applications and and the new software development in any technologies like ASP.Net MVC, Java, PHP, Node.JS deployed on cloud using AWS architecture.',
-                        skills: ['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5', 'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap', 'AWS', 'TFS', 'Git', 'Jenkins', 'Rhino mocks', 'Unity'] }),
+                        jobDescription: '6 person Scrum team member, dedicated to maintain VisualBasic console applications, Classic ASP, ASP.Net MVC, ASP.Net web applications and to the new software development in some technologies like ASP.Net MVC, Java, PHP, Node.JS deployed on cloud using AWS architecture.',
+                        skills: ['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Mongo DB', 'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5', 'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap', 'AWS', 'TFS', 'Git', 'Jenkins', 'Rhino mocks', 'Unity'] }),
                     _react2.default.createElement('hr', null),
                     _react2.default.createElement(_itemJob2.default, { imageName: 'infoempleo.jpg',
-                        companyDescription: 'Company dedicated to software development that manages the curriculums of different companies',
+                        companyDescription: 'Job at ePreselec area, dedicated to software development that manages the curriculums of different companies, property of Infoempleo',
                         position: 'Senior Developer',
-                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
-                        skills: ['.NET', 'Java'] }),
+                        jobDescription: 'Member of a team dedicated to maintain Classic ASP applications and to the new software development using ASP.Net.',
+                        skills: ['Classic ASP', 'ASP.NET', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions', 'Pure Javascript', 'jQuery', 'TFS'] }),
                     _react2.default.createElement('hr', null),
                     _react2.default.createElement(_itemJob2.default, { imageName: 'habber.jpg',
-                        companyDescription: 'IT consultancy',
+                        companyDescription: 'IT consultancy, job in internal projects and at ePreselec (Infoempleo.com)',
                         position: 'Senior Developer',
-                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
-                        skills: ['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions'] }),
+                        jobDescription: 'Dedicated to the development of the SWI Crawler UI using Pure Javascript, jQuery and Backbone.js',
+                        skills: ['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions', 'HTML 5', 'CSS 3', 'Pure Javascript', 'jQuery', 'Backbone.JS', 'Bootstrap', 'SVN'] }),
                     _react2.default.createElement('hr', null),
                     _react2.default.createElement(_itemJob2.default, { imageName: 'nutapps.jpg',
                         companyDescription: 'Customer\u2019s custom mobile applications development company.',
-                        position: 'Head of Development Area',
-                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
-                        skills: ['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS'] }),
+                        position: 'Co-Founder, Head of Development Area',
+                        jobDescription: 'Review of availability customers requests, creating MVP of the projects to can give to client using Objective C, Java Android and other backend technologies.',
+                        skills: ['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS', 'Mongo DB'] }),
                     _react2.default.createElement('hr', null),
                     _react2.default.createElement(_itemJob2.default, { imageName: 'tfs.jpg',
                         companyDescription: 'Company dedicated to developing GIS software',
                         position: 'Junior / Senior Developer',
-                        jobDescription: 'jofnwj fewj fejo fjoew foewj ewojf ew',
-                        skills: ['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions'] })
+                        jobDescription: 'Many GIS applications development like Cloud-Mapping, unoGIS, Inkolan or unoBRA based on .Net technologies like ASP.Net, WPF, WCF, MVC...',
+                        skills: ['ASP.NET', 'ASP.Net MVC', 'Windows Forms', 'WPF', 'WCF', 'SQL Server 2008', 'Entity Framework', 'Lambda Expressions', 'TFS', 'HTML 5', 'CSS 3', 'Pure JavaScript', 'jQuery', 'Backbone.js'] })
                 )
             );
         }
@@ -21291,7 +21359,7 @@ var Right = function (_React$Component) {
 
 exports.default = Right;
 
-},{"./right/item":188,"./right/item-description-badge":180,"./right/item-description-paragraph":181,"./right/item-job":186,"react":171}],180:[function(require,module,exports){
+},{"./right/item":189,"./right/item-description-badge":181,"./right/item-description-paragraph":182,"./right/item-job":187,"react":171}],181:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21365,7 +21433,7 @@ var ItemDescriptionBadge = function (_React$Component) {
 
 exports.default = ItemDescriptionBadge;
 
-},{"react":171}],181:[function(require,module,exports){
+},{"react":171}],182:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21418,7 +21486,7 @@ var ItemDescriptionParagraph = function (_React$Component) {
 
 exports.default = ItemDescriptionParagraph;
 
-},{"react":171}],182:[function(require,module,exports){
+},{"react":171}],183:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21476,7 +21544,7 @@ var ItemJobDescriptionSkills = function (_React$Component) {
 
 exports.default = ItemJobDescriptionSkills;
 
-},{"react":171}],183:[function(require,module,exports){
+},{"react":171}],184:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21536,7 +21604,7 @@ var ItemJobDescription = function (_React$Component) {
 
 exports.default = ItemJobDescription;
 
-},{"./item-job-description-skills":182,"react":171}],184:[function(require,module,exports){
+},{"./item-job-description-skills":183,"react":171}],185:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21586,7 +21654,7 @@ var ItemJobPictureDescription = function (_React$Component) {
 
 exports.default = ItemJobPictureDescription;
 
-},{"react":171}],185:[function(require,module,exports){
+},{"react":171}],186:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21638,7 +21706,7 @@ var ItemJobPicture = function (_React$Component) {
 
 exports.default = ItemJobPicture;
 
-},{"./item-job-picture-description":184,"react":171}],186:[function(require,module,exports){
+},{"./item-job-picture-description":185,"react":171}],187:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21702,7 +21770,7 @@ var ItemJob = function (_React$Component) {
 
 exports.default = ItemJob;
 
-},{"./item-job-description":183,"./item-job-picture":185,"react":171}],187:[function(require,module,exports){
+},{"./item-job-description":184,"./item-job-picture":186,"react":171}],188:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21748,7 +21816,7 @@ var ItemTitle = function (_React$Component) {
 
 exports.default = ItemTitle;
 
-},{"react":171}],188:[function(require,module,exports){
+},{"react":171}],189:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21804,4 +21872,4 @@ var Item = function (_React$Component) {
 
 exports.default = Item;
 
-},{"./item-title":187,"react":171}]},{},[172]);
+},{"./item-title":188,"react":171}]},{},[172]);

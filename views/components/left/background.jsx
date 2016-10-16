@@ -2,6 +2,7 @@ import React from 'react';
 import Pic from './pic';
 import Name from './name';
 import Description from './description';
+import Contact from './contact'
 
 class Background extends React.Component{
 
@@ -43,6 +44,7 @@ class Background extends React.Component{
                 <Name name="<Alejandro Hernández />" />
                 <Description description="I love turning complex problems into simple," />
                 <Description description="doing beautiful and useful things that people can enjoy."/>
+                <Contact />
             </div>
         </div>;
     }

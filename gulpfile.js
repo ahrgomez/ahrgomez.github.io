@@ -9,7 +9,7 @@ gulp.task('build', function () {
         .transform('babelify', {presets: ['es2015', 'react']})
         .bundle()
         .pipe(source('bundle.js'))
-        .pipe(gulp.dest('public/scripts'));
+        .pipe(gulp.dest('scripts'));
 });
 
 gulp.task('watch', ['build'], function () {
