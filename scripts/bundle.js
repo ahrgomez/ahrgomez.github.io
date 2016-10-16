@@ -21072,17 +21072,17 @@ var Contact = function (_React$Component) {
                 { className: "contact", title: "See ahrgomez's github account" },
                 _react2.default.createElement(
                     "a",
-                    { className: "git", href: "htts://github.com/ahrgomez" },
+                    { className: "git", target: "_blank", href: "htts://github.com/ahrgomez" },
                     _react2.default.createElement("i", { className: "fa fa-github" })
                 ),
                 _react2.default.createElement(
                     "a",
-                    { className: "linkedin", href: "https://es.linkedin.com/in/alejandro-hern\xE1ndez-a056233b", title: "See ahrgomez's linkedin CV" },
+                    { className: "linkedin", target: "_blank", href: "https://es.linkedin.com/in/alejandro-hern\xE1ndez-a056233b", title: "See ahrgomez's linkedin CV" },
                     _react2.default.createElement("i", { className: "fa fa-linkedin" })
                 ),
                 _react2.default.createElement(
                     "a",
-                    { className: "mail", href: "mailto:contact@ahrgomez.com", title: "Send an email to ahrgomez" },
+                    { className: "mail", target: "_blank", href: "mailto:contact@ahrgomez.com", title: "Send an email to ahrgomez" },
                     _react2.default.createElement("i", { className: "fa fa-envelope" })
                 )
             );
