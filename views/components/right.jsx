@@ -92,16 +92,17 @@ class Right extends React.Component {
                             }
                             ]} />
                     </Item>
-                    <Item itemClass="jobs" title="Where I worked?">
+                    <Item itemClass="jobs" title="My career path">
                         <ItemJob imageName="infojobs.jpg"
                                  companyDescription="Job at ePreselec area, dedicated to develope
                                  software that manages the curriculums of different companies,
                                  property of Infojobs (Schibsted Spain)"
                                  position="Senior Developer"
-                                 jobDescription="6 person Scrum team member, dedicated to maintain VisualBasic console applications,
-                                 Classic ASP, ASP.Net MVC, ASP.Net web applications and to the new software development in some
-                                 technologies like ASP.Net MVC, Java, PHP, Node.JS deployed on cloud
-                                 using AWS architecture."
+                                 jobDescription="6-person Scrum team member. Dedicated to maintain
+                                 VisualBasic console applications, Classic ASP, ASP.Net MVC, ASP.Net web applications.
+                                 Dedicated new software development in some technologies like ASP.Net MVC, Java, PHP,
+                                 Node.JS deployed on cloud using AWS architecture.
+"
                                  skills={['Classic ASP', 'ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Mongo DB',
                                      'Entity Framework', 'Lambda Expressions', 'PHP', 'Node.JS', 'HTML 5',
                                      'CSS 3', 'Pure Javascript', 'jQuery', 'React.JS', 'Backbone.JS', 'Bootstrap',
@@ -121,8 +122,8 @@ class Right extends React.Component {
                         <ItemJob imageName="habber.jpg"
                                  companyDescription="IT consultancy, job in internal projects and at ePreselec (Infoempleo.com)"
                                  position="Senior Developer"
-                                 jobDescription="Dedicated to the development of the SWI Crawler UI using Pure
-                                 Javascript, jQuery and Backbone.js"
+                                 jobDescription="Fully focused on developing the SWI Crawler UI using Pure Javascript,
+                                 jQuery and Backbone.js"
                                  skills={['ASP.NET', 'ASP.Net MVC', 'SQL Server 2008', 'Entity Framework',
                                      'Lambda Expressions', 'HTML 5',
                                      'CSS 3', 'Pure Javascript', 'jQuery', 'Backbone.JS', 'Bootstrap', 'SVN']}/>
@@ -139,8 +140,8 @@ class Right extends React.Component {
                                  companyDescription="Company dedicated to developing
                                  GIS software"
                                  position="Junior / Senior Developer"
-                                 jobDescription="Many GIS applications development like Cloud-Mapping, unoGIS,
-                                 Inkolan or unoBRA based on .Net technologies like ASP.Net, WPF, WCF, MVC..."
+                                 jobDescription="Development of several GIs applications such as Cloud-Mapping, unoGIS,
+                                 Inkolan or unoBRA using the following frameworks ASP.Net, WPF, WCF, ASP.Net MVC."
                                  skills={['ASP.NET', 'ASP.Net MVC', 'Windows Forms', 'WPF', 'WCF', 'SQL Server 2008', 'Entity Framework',
                                      'Lambda Expressions', 'TFS', 'HTML 5', 'CSS 3', 'Pure JavaScript',
                                      'jQuery', 'Backbone.js']}/>
