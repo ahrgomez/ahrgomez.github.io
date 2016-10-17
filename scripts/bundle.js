@@ -21072,7 +21072,7 @@ var Contact = function (_React$Component) {
                 { className: "contact", title: "See ahrgomez's github account" },
                 _react2.default.createElement(
                     "a",
-                    { className: "git", target: "_blank", href: "htts://github.com/ahrgomez" },
+                    { className: "git", target: "_blank", href: "https://github.com/ahrgomez" },
                     _react2.default.createElement("i", { className: "fa fa-github" })
                 ),
                 _react2.default.createElement(
