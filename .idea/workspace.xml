@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fdaac44-137b-4372-93c1-9cab0ea7002c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/ahrgomez-cv.pdf" afterPath="$PROJECT_DIR$/files/ahrgomez-cv.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/components/left/contact.jsx" afterPath="$PROJECT_DIR$/views/components/left/contact.jsx" />
     </list>
     <ignored path="ahrgomez-portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,21 +25,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contact.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contact.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/components/left/contact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="right.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="right.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/components/right.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="113" column="59" selection-start-line="113" selection-start-column="59" selection-end-line="113" selection-end-column="59" />
+            <state relative-caret-position="1870">
+              <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="left.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/components/left.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -96,8 +105,8 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/styles/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/views/components/left/contact.jsx" />
         <option value="$PROJECT_DIR$/views/components/right.jsx" />
+        <option value="$PROJECT_DIR$/views/components/left/contact.jsx" />
       </list>
     </option>
   </component>
@@ -365,12 +374,12 @@
       <workItem from="1476430526962" duration="5226000" />
       <workItem from="1476437504315" duration="3040000" />
       <workItem from="1476467925875" duration="8578000" />
-      <workItem from="1476693188201" duration="2054000" />
+      <workItem from="1476693188201" duration="2151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44867000" />
+    <option name="totallyTimeSpent" value="44964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -688,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/components/left.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/components/left/background-list.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -740,18 +742,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/components/left/contact.jsx">
+    <entry file="file://$PROJECT_DIR$/views/components/right.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="1870">
+          <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/components/right.jsx">
+    <entry file="file://$PROJECT_DIR$/views/components/left.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="113" column="59" selection-start-line="113" selection-start-column="59" selection-end-line="113" selection-end-column="59" />
+        <state relative-caret-position="85">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/components/left/contact.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
           <folding />
         </state>
       </provider>

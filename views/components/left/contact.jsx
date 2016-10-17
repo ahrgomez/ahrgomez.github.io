@@ -4,7 +4,7 @@ class Contact extends React.Component{
 
     render() {
         return  <div className="contact" title="See ahrgomez's github account">
-                    <a className="git" target="_blank" href="htts://github.com/ahrgomez">
+                    <a className="git" target="_blank" href="https://github.com/ahrgomez">
                         <i className="fa fa-github" />
                     </a>
                     <a className="linkedin"  target="_blank" href="https://es.linkedin.com/in/alejandro-hernández-a056233b" title="See ahrgomez's linkedin CV">
