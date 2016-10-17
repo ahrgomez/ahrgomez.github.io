@@ -10,8 +10,11 @@ class Contact extends React.Component{
                     <a className="linkedin"  target="_blank" href="https://es.linkedin.com/in/alejandro-hernández-a056233b" title="See ahrgomez's linkedin CV">
                         <i className="fa fa-linkedin" />
                     </a>
-                    <a className="mail" target="_blank" href="mailto:contact@ahrgomez.com" title="Send an email to ahrgomez">
+                    <a className="mail" target="_blank" href="mailto:ahrgomez@gmail.com" title="Send an email to ahrgomez">
                         <i className="fa fa-envelope" />
+                    </a>
+                    <a className="download" target="_blank" href="./files/ahrgomez-cv.pdf" title="Download ahrgomez pdf CV">
+                        <i className="fa fa-download" />
                     </a>
                 </div>
     }

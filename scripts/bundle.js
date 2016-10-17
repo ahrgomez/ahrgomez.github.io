@@ -21082,8 +21082,13 @@ var Contact = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     "a",
-                    { className: "mail", target: "_blank", href: "mailto:contact@ahrgomez.com", title: "Send an email to ahrgomez" },
+                    { className: "mail", target: "_blank", href: "mailto:ahrgomez@gmail.com", title: "Send an email to ahrgomez" },
                     _react2.default.createElement("i", { className: "fa fa-envelope" })
+                ),
+                _react2.default.createElement(
+                    "a",
+                    { className: "download", target: "_blank", href: "./files/ahrgomez-cv.pdf", title: "Download ahrgomez pdf CV" },
+                    _react2.default.createElement("i", { className: "fa fa-download" })
                 )
             );
         }
