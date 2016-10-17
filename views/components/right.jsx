@@ -131,7 +131,7 @@ class Right extends React.Component {
                         <ItemJob imageName="nutapps.jpg"
                                  companyDescription="Customer’s custom mobile applications development company."
                                  position="Co-Founder, Head of Development Area"
-                                 jobDescription="Review of availability customers requests, creating MVP of
+                                 jobDescription="Review the technical feasibility of customer requests, creating MVP of
                                  the projects to can give to client using Objective C,
                                  Java Android and other backend technologies."
                                  skills={['Objective C', 'Java Android', 'Cocos 2D', 'SQL Lite', 'Node.JS', 'Mongo DB']}/>
